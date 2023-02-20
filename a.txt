@@ -1,6 +1,24 @@
-Yibaat vrot bratanla 
-oziya rosa siqilish boldiyu 
-rosa
+//B. Треугольник
+//Ограничение времени	1 секунда
+//Ограничение памяти	64Mb
+//Ввод	стандартный ввод или input.txt
+//Вывод	стандартный вывод или output.txt
+//Даны три натуральных числа. Возможно ли построить треугольник с такими сторонами. Если это возможно, выведите строку YES, иначе выведите строку NO.
+//
+//Треугольник — это три точки, не лежащие на одной прямой.
 
-futbol nimaboldi
-Fozil "yutqizdilamihudo holasa"
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+    int a, b, c;
+    cin >> a >> b >> c;
+ 
+    if ((a < b + c) && (b < a + c) && (c < a + b))
+        cout << "Yes" << endl;
+    else
+        cout << "No" << endl;
+ 
+    return 0;
+}
