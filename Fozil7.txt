@@ -1,0 +1,9 @@
+select distinct product.model, pc.price
+from Product join  pc on product.model = pc.model where maker = 'B'
+union
+select distinct product.model, laptop.price
+from product join laptop on product.model=laptop.model where maker='B'
+union
+select distinct product.model, printer.price
+from product join printer on  product.model=printer.model where maker='B'
+
