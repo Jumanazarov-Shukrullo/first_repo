@@ -1,0 +1,4 @@
+SELECT AVG(PC.speed)
+FROM Product LEFT JOIN PC 
+ON PC.model = Product.model
+WHERE Product.maker = 'A'
